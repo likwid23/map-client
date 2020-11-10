@@ -1,4 +1,4 @@
-const API_URL = window.location.hostname === 'localhost' ? 'https://stormy-reaches-97596.herokuapp.com/' : 'https://stormy-reaches-97596.herokuapp.com/';
+const API_URL = window.location.hostname === 'localhost' ? 'https://stormy-reaches-97596.herokuapp.com/' : 'https://api.guestm.app/api/v1/messages';
 
 export function getMessages() {
   return fetch(API_URL)
