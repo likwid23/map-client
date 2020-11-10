@@ -1,5 +1,7 @@
+
+
 export function getMessages() {
-  return fetch('https://stormy-reaches-97596.herokuapp.com/')
+  return fetch('https://stormy-reaches-97596.herokuapp.com')
     .then(res => res.json())
     .then(messages => {
       const haveSeenLocation = {};
@@ -38,7 +40,7 @@ export function getLocation() {
 }
 
 export function sendMessage(message) {
-  return fetch('https://stormy-reaches-97596.herokuapp.com/', {
+  return fetch('https://stormy-reaches-97596.herokuapp.com', {
     method: 'POST',
     headers: {
       'content-type': 'application/json',
